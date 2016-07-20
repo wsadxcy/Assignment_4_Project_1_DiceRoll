@@ -9,11 +9,10 @@ using System.Threading.Tasks;
  * Date : July 19th, 2016
  * Date Modified: Jul 19th, 2016
  * Description : Assignment 4 Project 1 Dice Roll
- * Version : 1.0 - 
- *                  Added tally function
- *                  Project 1 finished
+ * Version : 1.1 - 
+ *                  Change Project name
  */
-namespace Assignment_4
+namespace Assignment_4_Project_1
 {
     class Program
     {
