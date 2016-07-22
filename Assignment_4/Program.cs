@@ -9,8 +9,8 @@ using System.Threading.Tasks;
  * Date : July 19th, 2016
  * Date Modified: Jul 19th, 2016
  * Description : Assignment 4 Project 1 Dice Roll
- * Version : 1.1 - 
- *                  Change Project name
+ * Version : 1.2 - 
+ *                  Fixed a bug
  */
 namespace Assignment_4_Project_1
 {
@@ -20,7 +20,7 @@ namespace Assignment_4_Project_1
         {
             Random random = new Random(); // pseudo random number object
             List<int> diceRolls = new List<int>();// List that hold the dice result
-            int maxRoll = 36000;// roll the dice 36000 times
+            int maxRoll = 3600000;// roll the dice 36000 times
             int[] tally = new int[13];// array tally hold value 0-13
             for (int i = 0; i < maxRoll; i++)
             {
@@ -33,15 +33,15 @@ namespace Assignment_4_Project_1
 
             diceRolls.Sort();
             // Display the result
-            foreach (int result in diceRolls)
+            /*foreach (int result in diceRolls)
             {
                 Console.Write(result + " ");
             }
-            Console.WriteLine("\n");
+            */Console.WriteLine("\n");
 
             for (int i = 2; i < 13; i++)// display the number of result for each number
             {
-                Console.WriteLine("{0}: {1}   {2}", i, tally[i]);
+                Console.WriteLine("{0}: {1} ", i, tally[i]);
             }
 
         }
